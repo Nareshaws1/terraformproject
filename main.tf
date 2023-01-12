@@ -11,12 +11,3 @@ tags = {
 Name = "terraformEC8"
 }
 }
-
-resource "aws_ebs_volume" "two" {
-  availability_zone = ap-south-1a"
-  size = 8
-  
-  tags = {
-  Name = "HelloWorld"
-  }
-  }
