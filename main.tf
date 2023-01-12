@@ -8,6 +8,15 @@ resource "aws_instance" "on7e" {
 ami = "ami-0cca134ec43cf708f"
 instance_type = "t2.micro"
 tags = {
-Name = "terraformEC5"
+Name = "terraformEC8"
 }
 }
+
+resource "aws_ebs_volume" "two" {
+  availability_zone = ap-south-1a"
+  size = 8
+  
+  tags = {
+  Name = "HelloWorld"
+  }
+  }
